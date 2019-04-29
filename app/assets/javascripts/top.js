@@ -1,14 +1,7 @@
-function printHelloWithButton() {
-  var btn = document.querySelector("input");
-
-  function printHello() {
-    console.log("Hello World dayo.");
-  }
-  btn.addEventListener("click", printHello);
-}
-
-window.addEventListener("load", printHelloWithButton);
-
-
-
-
+window.addEventListener("load", function() {
+  var btn = document.querySelector('input');
+  
+  btn.addEventListener("click", function() {
+    console.log("hello world");
+  });
+});
